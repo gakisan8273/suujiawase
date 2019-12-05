@@ -1,11 +1,13 @@
 <template>
-  <div class='container'>
+  <div class="main-game-container">
+  <!-- <div class='container'>
     <div class='main'>
-      <div class='main-container'>
+      <div class='main-container'> -->
         <ShowNextNumber />
         <Panels/>
-      </div>
+      <!-- </div>
     </div>
+  </div> -->
   </div>
 
 </template>

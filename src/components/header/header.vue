@@ -1,7 +1,7 @@
 <template>
-    <header class="header">
+    <header class="header" id="header">
       <div class="header-container">
-      <h1 class='header-title'>すうじあわせ</h1>
+      <h1 class='header-title'><a href="./">すうじあわせ</a></h1>
       <img src="@/assets/train_baner1.png" alt="" v-if="this.$route.path === '/'" class="header-train">
       <nav class='header-nav' v-if="this.$route.path !== '/'">
         <ul class='header-nav-list'>

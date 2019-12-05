@@ -10,6 +10,7 @@
    display: flex;
    flex-direction: column;
    align-items: center;
+   height:15%;
  }
  .main-next-sentence{
    font-size: 30px;

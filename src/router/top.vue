@@ -1,9 +1,9 @@
 <template>
 <!-- ヘッダーはコンポーネント化した 各画面共通があるのでApp.vueで読み込み -->
-
-  <div class='container'>
+  <div class="main-top-container">
+  <!-- <div class='container' id="container">
     <div class='main'>
-      <div class='main-container'>
+      <div class='main-container'> -->
         <!-- むずかしさボタンをコンポーネント化 -->
         <DifficultyBtns/>
         
@@ -16,8 +16,9 @@
         <!-- レコードもコンポーネント化する -->
         <Record/>
 
-      </div>
-    </div>
+      <!-- </div>
+    </div> -->
+  <!-- </div> -->
   </div>
 
 </template>
@@ -43,7 +44,22 @@ export default {
 /* リセット */
  html,body,div,h1,h2,ul,li,p,button{
   margin:0;
-  padding:0; 
+  padding:0;
+  box-sizing: border-box;
+}
+/* div{
+  height:100%;
+} */
+a,a:visited{
+  text-decoration: none;
+  color:#A58234;
+}
+div{
+  width:100%;
+  text-align: center;
+}
+#app{
+  height:100%;
 }
 body{
   height:100vh;
@@ -74,6 +90,10 @@ button:focus{
 
 /* container */
 .container{
+  height:100%;
+}
+.main-top-container,.main-game-container,.main-result-container{
+  height:100%;
 }
 
 /* header */
@@ -122,12 +142,12 @@ button:focus{
 
 /* main */
 .main{
-  background-image: url("../assets/background.png");
+  background-image: url("../static/background.png");
   width:100%;
   display: flex;
   justify-content: center;
   padding: 50px 0 0 0;
-  height:100vh;
+  height:100%;
 }
 .main-container{
   width:980px;
@@ -163,7 +183,7 @@ button:focus{
 
 /* main-start */
 .main-start{
-  padding-top: 60px;
+  padding-top: 30px;
   display: flex;
   justify-content: center;
 }
@@ -189,6 +209,7 @@ button:focus{
 .main-record-container{
   width:700px;
   height:250px;
+  /* height: 10rem; */
   background-color: #ffffff;
   border-radius: 20px;
   margin-bottom:20px;
@@ -206,8 +227,9 @@ button:focus{
 }
 .main-record-table{
   margin-top: 10px;
-  margin-left: 20px;
-  margin-right:20px;
+  /* margin-left: 20px;
+  margin-right:20px; */
+  margin:10px auto;
   margin-bottom: 20px;
   text-align: center;
   border-collapse: collapse;

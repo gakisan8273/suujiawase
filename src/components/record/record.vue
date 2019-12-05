@@ -8,7 +8,7 @@
         <p class='main-record-title-innner'>むずかしさを えらんでから</p>
         <p class='main-record-title-innner'>「あそぶ」をおして げーむを はじめよう！</p>
       </div>
-      <div v-else>
+      <div v-else style='text-align:left'>
         <p class='main-record-title'>りれき</p>
         <table class='main-record-table'>
           <!-- 一番上から新しい順にする　v-forいける？tableは何か制約があった様な・・・ -->

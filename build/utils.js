@@ -18,7 +18,8 @@ exports.cssLoaders = function (options) {
   const cssLoader = {
     loader: 'css-loader',
     options: {
-      sourceMap: options.sourceMap
+      sourceMap: options.sourceMap,
+      // url:false //追加　url()を変換しない
     }
   }
 

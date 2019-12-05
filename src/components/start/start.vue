@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <!-- <div> -->
     <button class='main-start-btn btn' @click="checkDifficulty">あそぶ</button>
-  </div>
+  <!-- </div> -->
 </template>
 
 <script>

@@ -1,14 +1,16 @@
 <template>
-  <div class='container'>
+  <div class="main-result-container">
+  <!-- <div class='container'>
     <div class='main'>
-      <div class='main-container'>
+      <div class='main-container'> -->
         <p class='main-word'>がんばったね！　おめでとう！</p>
         <p class='main-result'>かかったじかん　<span class='main-result-second'>{{ getRecentClearTime }}</span>　びょう</p>
         <img src="@/assets/train_move1.gif" alt="" class="main-clearIMG">
         <!-- レコードをコンポーネント化してTOPと共通化 -->
         <Record/>
-      </div>
+      <!-- </div>
     </div>
+  </div> -->
   </div>
 </template>
 

@@ -61,13 +61,15 @@ export default {
   align-content: space-around;
   justify-content: space-around;
   flex-wrap: wrap;
-  height: 500px;
+  /* height: 500px; */
+  height: 85%;
+  padding-top: 30px;
+  padding-bottom: 50px;
 }
 .main-panels-panel{
   /* flex-basis: 22%; */
-  height: 70px;
+  /* height: 70px; */
   border-radius: 20px;
-  font-size: 50px;
   font-weight: 100;
   font-family: 'mini-wakuwaku', sans-serif;
   color: #fff;
@@ -91,13 +93,28 @@ export default {
   background-color: #00FF93;
 }
 .easyPanel{
-  flex-basis:30%
+  flex-basis:30%;
+  height:20%;
+  font-size: 50px;
 }
 .normalPanel{
-  flex-basis:22%
+  flex-basis:22%;
+  height:15%;
+  font-size: 50px;
 }
-.hardPanel{
-  flex-basis:18%
+@media screen and (max-width:1025px){
+  .hardPanel{
+    flex-basis:18%;
+    height:12%;
+    font-size: 30px;
+  }
+}
+@media screen and (min-width:1025px){
+  .hardPanel{
+    flex-basis:18%;
+    height:12%;
+    font-size: 50px;
+  }
 }
 .isNoShow{
   visibility: hidden;
